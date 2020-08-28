@@ -1,0 +1,5 @@
+df2.loc[60] = None
+df2.iloc[60,0] = "2020-08-28"
+for i in range(1,6):
+  df2.iloc[60,i] = df2.iloc[:,i].sum()
+print(df2)
